@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding : 0;
+    font-size: 12px;
+    font-family: 'icomoon';
+}
+li{
+    list-style : none;
+    position: relative;
+}
+a{
+    text-decoration:none;
+    font-size: 12px;
+    color: rgb(151, 151, 151);
+}
+input,button{
+    border: 0;
+    outline: 0;
+}
+
+.home-filmDetails{
+    position: absolute;top: 0; left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height:90vh;
+    background: rgb(255, 255, 255);
+    z-index: 4;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    animation: showDetails .3s ease-out 1;
+  }
+  .hone-closeFilmDetails{
+    position: absolute ; top: 2vh; left: 2vh;
+    width: 5vh;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 3vh;
+    color: rgb(137, 237, 255);
+  }
+  .home-filmDetails header{
+    position: absolute; top: 10vh; left: 20vh;
+    margin: 0 0 0 45vw;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background: rgb(21, 105, 231);
+  }
+  .home-filmDetails-post{
+    position: absolute; top:10vh ; left: 5vw;
+    width: 16vh;
+    height:23vh;
+    background: #000;
+  }
+  .home-filmDetails-name{
+    position: absolute; top: 10vh; left: 5vw;
+    margin: 0 0 0 20vh;
+    width: 40vw;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bolder;
+    font-size: 18px;
+    overflow: hidden;
+    /* background: rgb(214, 214, 214); */
+  }
+  .home-filmDetails-time{
+    position: absolute; top: 10vh; left: 5vw;
+    margin: 30px 0 0 20vh;
+    width: 30vw;
+    height: 20px;
+    /* background: red; */
+  }
+  .home-filmDetails-actors{
+    position: absolute; top: 10vh; left: 5vw;
+    margin: 50px 0 0 20vh;
+    width: 45vw;
+    height: 18vh;
+    overflow-y:scroll;
+  }
+  .home-filmDetails-director{
+    position: absolute; top: 28vh; left: 5vw;
+    margin: 50px 0 0 20vh;
+    width: 45vw;
+    height: 20px;
+  }
+  .home-filmDetails-region{
+    position: absolute; top: 28vh; left: 5vw;
+    margin: 70px 0 0 20vh;
+    width: 30vw;
+    height: 20px;
+  }
+  .home-filmDetails-type{
+    position: absolute; top: 28vh; left: 5vw;
+    margin: 90px 0 0 20vh;
+    width: 30vw;
+    height: 20px;
+  }
+  .home-filmDetails-score{
+    position: absolute; top: 35vh; left: 5vw;
+    box-sizing: border-box;
+    width: 16vh;
+    height: 20px;
+    text-align: center;
+    line-height: 16px;
+    color: rgb(21, 105, 231);
+    font-weight: bolder;
+    border: 2px solid rgb(21, 105, 231);
+    border-radius: 10px;
+  }
+  .home-filmDetails-message{
+    position: absolute; top: 28vh; left: 5vw;
+    margin: 130px 0 0 0;
+    width: 90vw;
+    height: 26vh;
+    font-size: 3vh;
+    border-top: 1px solid skyblue;
+    border-bottom: 1px solid skyblue;
+    overflow-y:scroll;
+  }
+  @keyframes  showDetails{
+     0%{
+        left:-100%
+     }
+     100%{
+        left: 0;
+     }
+  }
